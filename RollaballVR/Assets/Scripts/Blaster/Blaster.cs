@@ -20,7 +20,7 @@ public class Blaster : MonoBehaviour
     public Text m_AmmoOutput = null;
 
     private bool m_IsReloading = false;
-    private int FiredCount = 0;
+    private int m_FiredCount = 0;
 
     private void Awake()
     {
@@ -65,7 +65,7 @@ public class Blaster : MonoBehaviour
             yield break;
         m_AmmoOutput.text = "-";
         m_IsReloading = true;
-        m_ProjectilePool.SetAllPrijectiles();
+        m_ProjectilePool.SetAllProjectiles(true);
 
         yield return new WaitForSeconds(m_ReloadTime);
         UpdateFiredCount(0);

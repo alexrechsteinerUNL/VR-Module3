@@ -14,17 +14,13 @@ public class Projectile : MonoBehaviour
         SetInnactive();
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        SetInnactive();
-    }
-
     public void Launch(Blaster blaster)
     {
+        Debug.Log("Launch method ran");
         transform.position = blaster.m_Barrel.position;
         transform.rotation = blaster.m_Barrel.rotation;
 
-        gameObject.SetActive(true);
+        this.gameObject.SetActive(true);
 
         m_Ridigbody.AddRelativeForce(Vector3.forward * blaster.m_Force, ForceMode.Impulse);
         StartCoroutine(TrackLifetime());
