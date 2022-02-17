@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using TMPro;
 
 public class Target : MonoBehaviour
 {
+
+    public GameObject winTextObject;
+    public TextMeshProUGUI countText;
+
     public Color m_FlashDamageColor = Color.white;
 
     private MeshRenderer m_MeshRenderer = null;
     private Color m_OriginalColor = Color.white;
-
+    private int count;
     private int m_MaxHealth = 2;
     private int m_Health = 0;
 
@@ -67,5 +73,7 @@ public class Target : MonoBehaviour
     private void KillTarget()
     {
         gameObject.SetActive(false);
+        count = count + 1;
+        countText.text = "Count: " + count.ToString();
     }
 }
