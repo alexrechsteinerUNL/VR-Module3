@@ -1,0 +1,21 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.25f1 (9b9180224418) revision 10195328'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'en' Physical Memory: 8059 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.25f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/P40 Yoga/Documents/Homework/CSCE492VR/VR-Module3/RollaballVR
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+51347
+Successfully changed project path to: C:/Users/P40 Yoga/Documents/Homework/CSCE492VR/VR-Module3/RollaballVR
+C:/Users/P40 Yoga/Documents/Homework/CSCE492VR/VR-Module3/RollaballVR
+Using Asset Import Pipeline V2.
