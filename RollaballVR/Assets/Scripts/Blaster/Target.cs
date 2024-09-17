@@ -15,7 +15,7 @@ public class Target : MonoBehaviour
     private MeshRenderer m_MeshRenderer = null;
     private Color m_OriginalColor = Color.white;
     private int count;
-    private int m_MaxHealth = 2;
+    private int m_MaxHealth = 3;
     private int m_Health = 0;
 
     private void Awake()
